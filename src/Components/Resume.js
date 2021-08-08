@@ -93,8 +93,10 @@ const ResumeStyled = styled.section`
   .image-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px;
-    grid-auto-rows: 450px;
+    grid-gap: 1.5rem;
+    @media screen and (max-width: 900px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   .image-list img {
     background-color: var(--background-dark-grey);
@@ -103,7 +105,7 @@ const ResumeStyled = styled.section`
     border-top: 6px solid var(--boarder-color);
     border-bottom: 1px solid var(--boarder-color);
     transition: all 0.4s ease-in-out;
-    width: 550px;
+    width: 100%;
     &:hover {
       transform: translateY(13px);
       border-top: 6px solid var(--white-color);

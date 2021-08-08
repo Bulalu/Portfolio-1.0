@@ -23,10 +23,10 @@ function PortCard({ video, title, paragraph }) {
 
 const PortCardStyled = styled.div`
   background-color: var(--background-dark-grey);
-  border-left: 1px solid var(--boarder-color);
-  border-right: 1px solid var(--boarder-color);
-  border-top: 6px solid var(--boarder-color);
-  border-bottom: 1px solid var(--boarder-color);
+  border-left: 0.2rem solid var(--boarder-color);
+  border-right: 0.2rem solid var(--boarder-color);
+  border-top: 0.4rem solid var(--boarder-color);
+  border-bottom: 0.2rem solid var(--boarder-color);
   transition: all 0.4s ease-in-out;
   &:hover {
     border-top: 6px solid var(--primary-color);
@@ -34,6 +34,10 @@ const PortCardStyled = styled.div`
   }
   .container {
     padding: 2.8rem;
+    iframe {
+      width: 100%;
+      height: 50vh;
+    }
     h4 {
       color: var(--white-color);
       font-size: 1.6rem;

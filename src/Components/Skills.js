@@ -21,7 +21,7 @@ function Skills() {
             width={"90%"}
             text={"90%"}
           />
-          <ProgressBar title={"React.js"} width={"40%"} text={"40%"} />
+          <ProgressBar title={"React.js"} width={"50%"} text={"50%"} />
           <ProgressBar title={"Communication"} width={"80%"} text={"80%"} />
           <ProgressBar title={"Team Work"} width={"70%"} text={"70%"} />
         </div>
@@ -36,6 +36,9 @@ const SkillsStyled = styled.section`
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 2rem;
     grid-column-gap: 3rem;
+    @media screen and (max-width: 700px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 `;
 export default Skills;

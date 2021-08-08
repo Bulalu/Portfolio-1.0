@@ -12,10 +12,10 @@ const GlobalStyle = createGlobalStyle`
     --background-light-color-2: rgba(3,127,255,.3);
   
     --white-color: #FFF;
-    --font-light-color: #a4acc4;
+    --font-light-color: #657090;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
-    --sidebar-dark-color: #191D2B;
+    --sidebar-dark-color: #0c0c0c;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
@@ -58,6 +58,28 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.2rem;
         padding-bottom: .6rem;
     }
+
+// Global media queries
+// NAv toggler
+.ham-burger-menu{
+        position: absolute;
+        right: 10%;
+        top: 3%;
+        display: none;
+        z-index: 15;
+        svg{
+            font-size: 3rem;
+        }
+    }
+    .nav-toggle{
+        transform: translateX(0);
+        z-index: 20;
+    }
+    @media screen and (max-width: 1200px) {
+        .ham-burger-menu{
+            display: block;
+        }
+  }
 `;
 
 export default GlobalStyle;

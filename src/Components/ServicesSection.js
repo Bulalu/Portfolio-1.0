@@ -46,10 +46,17 @@ function ServicesSection() {
 const ServicesSectionStyled = styled.section`
   .services {
     margin-top: 4rem;
-    display: flex;
-    justify-content: space-between;
-    .mid-card {
-      margin: 0 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    @media screen and (max-width: 1145px) {
+      flex-direction: column;
+    }
+    @media screen and (max-width: 1139px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 690px) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `;
