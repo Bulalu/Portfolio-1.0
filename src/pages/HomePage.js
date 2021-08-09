@@ -12,7 +12,7 @@ function HomePage() {
       <div className="typography">
         <div className="typical_">
           <h1>
-            Hey there, <span>Welcome to Site.</span>
+            Hey there, <span>Welcome to My Site.</span>
           </h1>
           <p>
             I'm
